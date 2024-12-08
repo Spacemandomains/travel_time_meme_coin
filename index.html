@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .section {
+            min-height: 80vh; /* 80% of the viewport height */
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid #ccc; /* Optional: to distinguish sections */
+        }
+
+        .section h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .section h1 {
+                font-size: 1.5rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section" style="background-color: #f4f4f4;">
+            <div>
+                <h1>Welcome to Our Landing Page</h1>
+                <p>Discover our services and offerings.</p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #eaeaea;">
+            <div>
+                <h1>About Us</h1>
+                <p>Learn more about our company and team.</p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #dcdcdc;">
+            <div>
+                <h1>Our Services</h1>
+                <p>Explore the services we provide.</p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #cfcfcf;">
+            <div>
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for more information.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
