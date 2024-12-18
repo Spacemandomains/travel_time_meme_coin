@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Beedehoo Coin</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             color: #333;
         }
 
@@ -197,6 +198,115 @@
             scroll-behavior: smooth;
         }
 
+        /* Section 4 Styling */
+.section4 {
+  background-color: #ffffff; /* White background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section4 h2 {
+  font-family: sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section4 p {
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.section4-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section4-feature {
+  background: #f9f9f9; /* Subtle light gray card background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section4-feature h3 {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.section4-feature p {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: #666666; /* Subtle text color */
+}
+
+.section4-icon {
+  font-size: 2.5em; /* Icon size */
+  margin-bottom: 10px;
+}
+
+/* Icon Colors */
+.section4-feature:nth-child(1) .section4-icon { color: #ffcc00; } /* Food */
+.section4-feature:nth-child(2) .section4-icon { color: #00ccff; } /* Ground Transportation */
+.section4-feature:nth-child(3) .section4-icon { color: #ff66cc; } /* Clothing */
+.section4-feature:nth-child(4) .section4-icon { color: #66ff66; } /* Lodging */
+.section4-feature:nth-child(5) .section4-icon { color: #ffcc00; } /* Haircuts */
+.section4-feature:nth-child(6) .section4-icon { color: #00ccff; } /* Tours */
+
+
+.section5 {
+  background-color: #ffffff; /* White background */
+  padding: 40px 20px; /* Add some padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section5 img {
+  max-width: 150px; /* Adjust image size */
+  margin-bottom: 20px;
+}
+
+.section5 .section-content {
+  max-width: 800px; /* Set a maximum width for the text content */
+}
+
+.section5 h2 {
+  font-size: 2.5em;
+  color: #333333; /* Dark gray for the text */
+  margin-bottom: 15px;
+}
+
+.section5 p {
+  font-size: 1.2em;
+  color: #555555; /* Medium gray for paragraph text */
+  margin-bottom: 20px;
+}
+
+.section5 a {
+  display: inline-block;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.section .section-content button {
+  font-family: sans-serif; /* Set font to sans-serif */
+  font-size: 1em; /* Adjust size if needed */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
     </style>
 </head>
 <body>
@@ -298,16 +408,60 @@
     </div>
 </section>
 
-        <!-- Section 4 -->
-        <section class="section">
-            <img src="https://beedehoomemecoin.netlify.app/beedehooicon.png" alt="Placeholder for swift transactions">
+       <!-- Section 4 -->
+<section class="section4">
+    <h2>What Can You Purchase with Beedehoo?</h2>
+    <p>Explore the wide range of items and services you can buy with Beedehoo coin.</p>
+    <div class="section4-container">
+      <!-- Food -->
+      <div class="section4-feature">
+        <i class="fa fa-utensils section4-icon"></i>
+        <h3>Food</h3>
+        <p>Enjoy meals at restaurants where you travel.</p>
+      </div>
+      <!-- Ground Transportation -->
+      <div class="section4-feature">
+        <i class="fa fa-car section4-icon"></i>
+        <h3>Ground Transportation</h3>
+        <p>Pay for airport bus and private cars.</p>
+      </div>
+      <!-- Clothing -->
+      <div class="section4-feature">
+        <i class="fa fa-tshirt section4-icon"></i>
+        <h3>Clothing</h3>
+        <p>Shop for trendy custom sized apparel.</p>
+      </div>
+      <!-- Lodging -->
+      <div class="section4-feature">
+        <i class="fa fa-bed section4-icon"></i>
+        <h3>Lodging</h3>
+        <p>Book local Airbnb's where you travel</p>
+      </div>
+      <!-- Haircuts -->
+      <div class="section4-feature">
+        <i class="fa fa-cut section4-icon"></i>
+        <h3>Haircuts</h3>
+        <p>Get stylish cuts at barbershops.</p>
+      </div>
+      <!-- Tours -->
+      <div class="section4-feature">
+        <i class="fa fa-map-signs section4-icon"></i>
+        <h3>Tours</h3>
+        <p>Book guided tours and VIP travel experiences.</p>
+      </div>
+    </div>
+  </section>
+  
+        <!-- Section 5-->
+          <section class="section5">
+            <img src="https://beedehoomemecoin.netlify.app/beedehooicon.png" alt="beedehoo coin">
             <div class="section-content">
-                <h2>Bee-deh-oo: The AI-Powered Traveler's Cryptocurrency</h2>
-                <p>Beedehoo is the ultimate cryptocurrency for travelers. Not just any cryptocurrency; it's built with AI at its core, making it the ultimate travel companion for managing your finances abroad. With its liquidity burned, Beedehoo ensures a stable and deflationary ecosystem, protecting your investment and increasing the value of your currency over time., Offering seamless financial freedom wherever your adventures take you. Say goodbye to hefty bank and exchange fees—Beedehoo enables you to move large sums of money effortlessly.
-                </p>
-                <a href="ourwhitepaper.html">Explore our whitepaper</a>
+              <h2>Bee-deh-oo: The AI-Powered Traveler's Cryptocurrency</h2>
+              <p>Beedehoo is the ultimate cryptocurrency for travelers. Not just any cryptocurrency; it's built with AI at its core, making it the ultimate travel companion for managing your finances abroad. With its liquidity burned, Beedehoo ensures a stable and deflationary ecosystem, protecting your investment and increasing the value of your currency over time., Offering seamless financial freedom wherever your adventures take you. Say goodbye to hefty bank and exchange fees—Beedehoo enables you to move large sums of money effortlessly.</p>
+              <a href="ourwhitepaper.html">Explore our whitepaper</a>
             </div>
-        </section>
+          </section>
+          
     </main>
 
     <footer style="text-align: center;">
