@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beedehoo Investment Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #001f3f;
+            color: #FFD700;
+            overflow: hidden;
+            position: relative;
+        }
+        .stars {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            animation: flyThrough 10s linear infinite;
+        }
+        @keyframes flyThrough {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+        .nav {
+            background-color: #FFD700;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .nav a {
+            color: #002855;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #FFC107;
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto 0 auto;
+            padding: 20px;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(255, 215, 0, 0.5);
+            background-color: #002855;
+            position: relative;
+            z-index: 2;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #FFD700;
+            color: #002855;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="nav">
+        <!-- <a href="#calculator">Calculator</a> -->
+        <a href="progressscale.html">Progress Scale</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="https://www.youtube.com/@Beedehoocoin">YouTube Live</a>
+    </div>
+    <div class="container" id="calculator">
+        <h2>Beedehoo Investment Calculator</h2>
+        <label for="investment">Enter your investment ($):</label>
+        <input type="number" id="investment" value="850">
+        <button onclick="calculateProfit()">Calculate</button>
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        function calculateProfit() {
+            let investment = parseFloat(document.getElementById("investment").value);
+            let finalValue = investment * (1 + (10000 / 850)); // Calculates final amount with $10,000 profit
+            document.getElementById("result").innerText = `Your investment could grow to: $${finalValue.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
