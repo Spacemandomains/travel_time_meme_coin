@@ -8,14 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
             background: url('cloudbackground.png') no-repeat center center/cover;
             color: #FFD700;
             overflow: hidden;
             position: relative;
+            display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
         }
         .nav {
-            background-color: #FFD700;
             padding: 10px;
             text-align: center;
             position: fixed;
@@ -35,6 +38,7 @@
         }
         .countdown-container {
             margin-top: 100px;
+            padding: 20px; /* Adds padding inside the container */
             font-size: 24px;
             display: flex;
             justify-content: center;
@@ -55,18 +59,20 @@
             width: fit-content;
         }
         .rocket-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-        }
-        .rocket {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            animation: shake 0.2s infinite alternate;
-        }
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ensure full screen height */
+    display: flex;
+    align-items: flex-end; /* Aligns the rocket to the bottom of the container */
+    justify-content: center; /* Centers the rocket horizontally */
+}
+
+.rocket {
+    max-width: 150px; /* Adjust size if needed */
+    height: auto;
+    position: relative; /* Keeps it within the container */
+}
+
         .smoke {
     position: absolute;
     bottom: 0;
@@ -81,34 +87,19 @@
     border-radius: 50%;
 }
 
-@keyframes smoke {
-    0% { 
-        opacity: 1; 
-        transform: translateX(-50%) translateY(0) scale(1); 
-    }
-    50% { 
-        opacity: 0.7; 
-        transform: translateX(-50%) translateY(-30px) scale(1.3); 
-    }
-    100% { 
-        opacity: 0; 
-        transform: translateX(-50%) translateY(-60px) scale(1.8); 
-    }
-}
-
 .disclaimer {
-        margin-top: 15px;
-        font-size: 14px;
-        color: #FFD700;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 10px;
-        border-radius: 5px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
+    text-align: center;
+    font-size: 14px;
+    color: #FFD700;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px; /* Space between rocket and disclaimer */
+    position: relative;
+    z-index: 10; /* Ensures it does not overlap the rocket */
+}
     </style>
 </head>
 <body>
