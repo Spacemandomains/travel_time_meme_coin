@@ -74,6 +74,19 @@
         button:hover {
             background-color: #FFC107;
         }
+
+        .disclaimer {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #FFD700;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -91,6 +104,11 @@
         <button onclick="calculateProfit()">Calculate</button>
         <h3 id="result"></h3>
     </div>
+
+    <!-- Disclaimer -->
+<div class="disclaimer">
+    <p><strong>Disclaimer:</strong> This is a projected return based on market cap and does not guarantee future performance. Cryptocurrency investments involve risk, and market conditions may fluctuate. Always conduct your own research before investing.</p>
+</div>
 
     <script>
         function calculateProfit() {
